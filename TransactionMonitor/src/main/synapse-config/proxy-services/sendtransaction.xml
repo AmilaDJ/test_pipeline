@@ -12,6 +12,5 @@
             <send/>
         </outSequence>
         <faultSequence/>
-        
     </target>
 </proxy>

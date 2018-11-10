@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messageStore xmlns="http://ws.apache.org/ns/synapse"
+              class="org.apache.synapse.message.store.impl.jdbc.JDBCMessageStore"
+              name="pending_transactions">
+   <parameter name="store.jdbc.dsName">jdbc/transaction_monitor</parameter>
+   <parameter name="store.producer.guaranteed.delivery.enable">false</parameter>
+   <parameter name="store.jdbc.table">pending_transactions</parameter>
+</messageStore>

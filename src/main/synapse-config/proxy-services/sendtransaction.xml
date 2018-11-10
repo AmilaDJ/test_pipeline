@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="sendtransaction" startOnLoad="true" transports="http" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <endpoint name="endpoint_urn_uuid_d1e8e5a5-76ce-46e8-a6fd-638a45478454">
+            <address uri="http://localhost:9090/transaction"/>
+        </endpoint>
+        <inSequence>
+            <log level="full"/>
+            <store messageStore="pending_transactions"/>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>

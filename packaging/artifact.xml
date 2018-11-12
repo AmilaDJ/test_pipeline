@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifacts>
+	<artifact name="test_pipeline" version="1.0.0"
+		type="carbon/application">
+		<dependency artifact="pending_transactions" version="1.0.0"
+			include="true" serverRole="EnterpriseServiceBus" />
+			<dependency artifact="sendtransaction" version="1.0.0"
+			include="true" serverRole="EnterpriseServiceBus" />
+	</artifact>
+</artifacts>

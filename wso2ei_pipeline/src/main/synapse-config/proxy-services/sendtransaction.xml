@@ -12,5 +12,4 @@
         </outSequence>
         <faultSequence/>
     </target>
-    <publishWSDL preservePolicy="true" uri="http://localhost:9090/services/Transaction?wsdl"/>
 </proxy>

@@ -2,26 +2,27 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mitrai.packaging</groupId>
-  <artifactId>packaging</artifactId>
+  <groupId>com.mitrai.wso2ei_pipeline</groupId>
+  <artifactId>wso2ei_pipelineCompositeApplication</artifactId>
   <version>1.0.0</version>
   <packaging>carbon/application</packaging>
-  <name>packaging</name>
+  <name>wso2ei_pipelineCompositeApplication</name>
+  <description>wso2ei_pipelineCompositeApplication</description>
   <properties>
-    <com.mitrai.pipeline_esb.message-store_._pending_transactions>capp/EnterpriseServiceBus</com.mitrai.pipeline_esb.message-store_._pending_transactions>
-    <com.mitrai.pipeline_esb.proxy-service_._sendtransaction>capp/EnterpriseServiceBus</com.mitrai.pipeline_esb.proxy-service_._sendtransaction>
+    <com.mitrai.wso2ei_pipeline.message-store_._pending_transactions>capp/EnterpriseServiceBus</com.mitrai.wso2ei_pipeline.message-store_._pending_transactions>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
+    <com.mitrai.wso2ei_pipeline.proxy-service_._sendtransaction>capp/EnterpriseServiceBus</com.mitrai.wso2ei_pipeline.proxy-service_._sendtransaction>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>com.mitrai.pipeline_esb.proxy-service</groupId>
-      <artifactId>sendtransaction</artifactId>
+      <groupId>com.mitrai.wso2ei_pipeline.message-store</groupId>
+      <artifactId>pending_transactions</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
     <dependency>
-      <groupId>com.mitrai.pipeline_esb.message-store</groupId>
-      <artifactId>pending_transactions</artifactId>
+      <groupId>com.mitrai.wso2ei_pipeline.proxy-service</groupId>
+      <artifactId>sendtransaction</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -113,6 +114,4 @@
       </plugin>
     </plugins>
   </build>
-  <description>packaging</description>
- 
 </project>

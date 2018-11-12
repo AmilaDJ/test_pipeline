@@ -2,25 +2,14 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mitrai.pipeline</groupId>
-  <artifactId>test_pipeline</artifactId>
+  <groupId>com.mitrai.wso2ei_pipeline</groupId>
+  <artifactId>wso2ei_pipelineCompositeApplicationMain</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
   <name>test_pipeline</name>
   <description>test_pipeline</description>
   <dependencies>
-    <dependency>
-      <groupId>com.mitrai.pipeline_esb.proxy-service</groupId>
-      <artifactId>sendtransaction</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.mitrai.pipeline_esb.message-store</groupId>
-      <artifactId>pending_transactions</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
+
   </dependencies>
   <repositories>
     <repository>
@@ -109,4 +98,8 @@
       </plugin>
     </plugins>
   </build>
+  <modules>
+  	<module>wso2ei_pipeline</module>
+  	<module>wso2ei_pipelineCompositeApplication</module>
+  </modules>
 </project>

@@ -1,1 +1,4 @@
 target
+wso2ei_pipeline/target
+wso2ei_pipelineCompositeApplication/target
+.project

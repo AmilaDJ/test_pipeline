@@ -103,4 +103,5 @@
   	<module>wso2ei_pipelineCompositeApplication</module>
   	<module>wso2ei_pipline_tests</module>
   </modules>
+  
 </project>

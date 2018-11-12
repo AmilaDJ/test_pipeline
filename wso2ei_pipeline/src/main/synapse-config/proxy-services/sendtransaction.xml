@@ -5,6 +5,9 @@
             <address uri="http://localhost:9090/transaction"/>
         </endpoint>
         <inSequence>
+            <property name="FORCE_SC_ACCEPTED" scope="axis2" type="STRING" value="true"/>
+            <property name="OUT_ONLY" scope="default" type="STRING" value="true"/>
+            <property name="target.endpoint" scope="default" type="STRING" value="StockQuoteServiceEp"/>
             <log level="full"/>
             <store messageStore="pending_transactions"/>
         </inSequence>
@@ -13,4 +16,5 @@
         </outSequence>
         <faultSequence/>
     </target>
+    <publishWSDL preservePolicy="true" uri="http://localhost:9000/services/SimpleStockQuoteService?wsdl"/>
 </proxy>

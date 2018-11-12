@@ -102,5 +102,4 @@
   	<module>wso2ei_pipeline</module>
   	<module>wso2ei_pipelineCompositeApplication</module>
   </modules>
-  
 </project>

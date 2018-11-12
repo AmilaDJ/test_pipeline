@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><artifacts>
-    <artifact name="pending_transactions" groupId="com.mitrai.test_pipeline.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
-        <file>src/main/synapse-config/message-stores/pending_transactions.xml</file>
-    </artifact>
-    <artifact name="sendtransaction" groupId="com.mitrai.test_pipeline.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
-        <file>src/main/synapse-config/proxy-services/sendtransaction.xml</file>
-    </artifact>
-</artifacts>

@@ -15,5 +15,4 @@
         </outSequence>
         <faultSequence/>
     </target>
-    <publishWSDL preservePolicy="true" uri="http://localhost:9000/services/SimpleStockQuoteService?wsdl"/>
 </proxy>

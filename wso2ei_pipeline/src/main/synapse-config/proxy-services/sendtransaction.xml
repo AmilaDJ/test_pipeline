@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <proxy name="sendtransaction" startOnLoad="true" transports="http" xmlns="http://ws.apache.org/ns/synapse">
     <target>
-        <endpoint name="endpoint_urn_uuid_ab83d2e6-f9e7-4915-8b04-435a908759a1">
-            <address uri="http://localhost:9090/transaction"/>
-        </endpoint>
         <inSequence>
             <property name="FORCE_SC_ACCEPTED" scope="axis2" type="STRING" value="true"/>
             <property name="OUT_ONLY" scope="default" type="STRING" value="true"/>
@@ -15,4 +12,5 @@
         </outSequence>
         <faultSequence/>
     </target>
+    <publishWSDL preservePolicy="true" uri="http://localhost:9090/services/Transaction?wsdl"/>
 </proxy>
